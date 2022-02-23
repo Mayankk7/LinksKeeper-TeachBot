@@ -3,6 +3,7 @@ import Styles from "./Cards.module.css";
 import { BsInfoCircleFill } from "react-icons/bs"
 import { FiLink } from "react-icons/fi"
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const Adder = ({ hideAdderCard, change, setchange }) => {
 
@@ -25,10 +26,10 @@ const Adder = ({ hideAdderCard, change, setchange }) => {
 
                 setchange(!change)
                 hideAdderCard()
-                alert("New Link Added")
+                Swal.fire('Congrats !', "New Link Added", "success")
             })
         } else {
-            alert("Please Put Valid Title and Link")
+            Swal.fire("", "Please Put Valid Title and Link", "question")
         }
     }
 

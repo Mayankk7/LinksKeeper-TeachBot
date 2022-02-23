@@ -3,6 +3,7 @@ import Logo from "../../Assets/logo.svg";
 import style from "./Login.module.css";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
+import Swal from "sweetalert2"
 
 function Login() {
   // const username = localStorage.getItem("Username")
@@ -18,7 +19,7 @@ function Login() {
       localStorage.setItem("Username", email);
       window.location.replace("/");
     } else {
-      alert("Please provide valid credentials");
+      Swal.fire("OOPS", "Please provide valid credentials");
     }
   };
   return (

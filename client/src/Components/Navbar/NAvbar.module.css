@@ -42,6 +42,16 @@
     font-size: 20px;
 }
 
+button{
+    background-color: #F87000;
+    color: white;
+    border: 0px;
+    font-size: 1vw;
+    padding: 1.5vh 4vh;
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
 @media (max-width:768px) {
     .majorContainer div p {
         font-size: 3.1vw;
